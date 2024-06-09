@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/SHIVAM.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Bachelor of Science,Computer Science</p>
+                <h1>Hi,I'm <span>Shivam </span> Yadav <br>from Thane Maharashtra</h1>
+            </div>
+        </div>
+        
+    </div>
+<!-- -----------Anout-------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_9338.JPG" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a Computer Science graduate student who loves cracking problems, 
+                        I’m eager to leverage my skills in frontend dev (currently HTML, CSS, JavaScript, PHP, ReactJS, NextJS, TypeScript ), 
+                        along with my experience working with APIs and my current learning endeavors in React and TypeScript, to contribute to the role 
+                        of Frontend Engineer. Fast learner, committed to excellence, and possessing a strong background in design, Web Development, and 
+                        Android app development.
+                    </p> 
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contains active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span>: Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span>: Web App Development</li>
+                            <li><span>App Development</span>: Building Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="experience">
+                        <ul>
+                            <li><span>Web Development Intern</span>: CodSoft</li>
+                            <li><span>AWS Trainee</span>: Anudip Foundation</li>
+                            <li><span>App Development</span>: Calculator</li>
+                            <li><span>UI?UX</span>: Designing Web/App Interfaces</li>
+                
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="education">
+                        <ul>
+                            <li><span>Bachelor of Computer Science</span>: Mulund College Of Commerce</li>
+                            <li><span>HSC</span>: Vani Vidyalaya </li>
+                            <li><span>SSC</span>: Dayanand Vedic Vidyalaya</li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!---------------------Services---------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <ion-icon name="code-slash-sharp"></ion-icon>
+                <h2>Outfit Planner</h2>
+                <p>Created a user-friendly outfit planner, allowing users to effortlessly create and save personalized outfits. 
+                    Implemented features such as authentication, categorization, and dynamic content updates 
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <ion-icon name="crop-sharp"></ion-icon>
+                <h2>Hill Climb</h2>
+                <p>Developed a game inspired by the popular mobile game "Hill Climb Racing," implementing physics-based gameplay mechanics and intuitive controls to create an engaging user experience.
+                     Demonstrated a passion for game development and a knack for creating addictive gameplay loops.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <ion-icon name="logo-apple-appstore"></ion-icon>
+                <h2>Calculator</h2>
+                <p>Simple Calculator that perform basic mathmatical operation like add,subtract,multiply,divide with different button such as "C" and "=".
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ---------------portfolio------------------ -->
+<!-- <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media  App</h3>
+                    <p>The app connect you to the talented people around the world.
+                        Download it from play store
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connect you to the talented people around the world.
+                        Download it from play store
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connect you to the talented people around the world.
+                        Download it from play store
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+
+    </div>
+</div> -->
+
+<!-- ---------Contact------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>syadav23806@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>9892058824</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shivam-yadav-b450ba285/"><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/shivam_yadav_one7/"><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                </div>
+                <a href="images/Shivam_CV.docx" download class="btn btn2">Download Cv</a>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Shivam ,Portfolio made with <i class="fas fa-heart"></i> using html,css,JavaScript</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        
+        }
+        for(tabcontent of tabcontents){
+            tabcontents.classList.remove("active-tab");
+        
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px"; 
+    }
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyCAkyyYGcQdEf-ii0TOmMUjsIow-sa2qPHJSPqoE28LMpLRxDl8ePxDWLwVaO7gDr3aQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
