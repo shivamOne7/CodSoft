@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container1 {
+    height: 100vh;
+    width: 100vw;
+    background: transparent url('./bg.svg') no-repeat;
+    background-size: 130% auto;
+    background-position: 40% 100%;
+}
+
+.hero {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-unstyled {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav a {
+    font-family: sans-serif;
+    color: white;
+}
+
+.nav img {
+    height: 60px;
+}
+
+.hero2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
+}
+
+.hero2 img {
+    width: 35%;
+}
+
+.text h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 55px;
+}
+
+.text p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+
+.text h1, p {
+    padding: 10px;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#cta-p {
+    margin-top: 10px;
+}
+
+.cta button {
+    padding: 15px 40px;
+    border-radius: 50px;
+}
+
+.services {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+    background-color: azure;
+    padding: 20px;
+    gap: 20px;
+    background: transparent url('Group 75.svg') no-repeat;
+    background-size: 145% auto;
+    background-position: 40% 1%;
+    bottom: -400px;
+    width: 100vw;
+
+}
+
+.service1 {
+    flex: 1;
+    max-width: 45%;
+    margin-right: 20px;
+    top: 2px;
+    
+
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+    max-width: 40%;
+}
+
+.service-item, .service-item-right {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width:170px;
+}
+
+.service-item img, .service-item-right img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.service-item p, .service-item-right p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #707070;
+}
+
+.services h2 {
+    color: #FF6752;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.services .description {
+    text-align: left;
+    color: #808080;
+    font-size: 18px;
+    margin: 5px 0;
+    color: var(--unnamed-color-808080);
+    letter-spacing: 0px;
+    opacity: 0.8;
+}
+
+.services p {
+    color: #666;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.services .highlight {
+    color: #FF6F61;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.zip-code {
+    margin: 20px 0;
+    display: inline-block;
+    position: relative;
+}
+
+.zip-code input {
+    padding: 15px 20px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-left: 60px;
+}
+
+.zip-code button {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    height: 90%;
+    width: 50px;
+    background-color: #FF6F61;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.nav .fas{
+    display: none;
+
+}
+
+/*---------------- responsive-------------------- */
+
+@media (min-width: 390px) and (max-width:600px){
+
+    
+
+    .container1{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container1 {
+        height: 100vh;
+        width: 100vw;
+        background: transparent url('./bg.svg') no-repeat ;
+        background-size: 130%;
+        background-position:50% -15%;
+    }
+    .nav img{
+        top: 10px;
+
+
+    }
+
+    .list-unstyled {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    .nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    .nav ul{
+        background: #f26b71;
+        position: fixed;
+        top:0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        
+        transition: right 0.5s;
+    }
+    .nav ul li{
+        display: block;
+        margin: 15px;
+    }
+    .nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .fa-bars{
+        cursor: pointer;
+        color: white;
+    }
+    .hero2{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .hero2 img {
+        width: 35%;
+    }
+    
+    .text h1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(0, 0, 0);
+        font-size: 55px;
+    }
+    
+    .text p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: rgb(0, 0, 0);
+    }
+    
+    .text h1, p {
+        padding: 10px;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;  
+        width: 100vw;
+        background: transparent url('Group 75.svg') no-repeat;
+        background-size: 145% auto;
+        background-position: 50% 300%;
+        bottom: 0px;
+    }
+    .service1 {
+        width: 100%;
+        max-width: 75%;
+    margin-right: 0px;
+    }
+    .service1 h2{
+        font-size: 30px;
+    }
+    .service1 p{
+        font-size: 12px;
+    }
+
+    .description{
+        font-size: 12px;
+    }
+    .services-list{
+        gap: 20px;
+        flex: 0;
+    max-width: 100%; 
+    }
+}
